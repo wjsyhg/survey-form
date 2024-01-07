@@ -1,0 +1,43 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+#container {
+    height: 100vh;
+    text-align: center;
+}
+
+.form-group {
+    margin: 5px;
+}
+
+#name-label {
+    float: left;
+}
+
+#name {
+    display: block;
+    width: 100%;
+}
+
+#email-label {
+    float: left;
+}
+
+#email {
+    display: block;
+    width: 100%;
+}
+
+#number-label {
+    float: left;
+}
+
+#number {
+    display: block;
+    width: 100%;
+}

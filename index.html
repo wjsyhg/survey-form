@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles.css">
+        <title>Survey Form</title>
+    </head>
+    <body>
+        <div id="container">
+            <h1 id="title">Survey Form</h1>
+            <p id="description">Thank you for taking the time to help us improve the product</p>
+            <form id="survey-form">
+                <div class="form-group">
+                    <label id="name-label">Name</label>
+                    <input id="name" type="text" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label id="email-label">Email</label>
+                    <input id="email" type="email" title="Enter a valid email address" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label id="number-label">Number</label>
+                    <input id="number" type="number" placeholder="Enter your number">
+                </div>
+                <div class="form-group">
+                    <select id="dropdown">
+                        <option value="">--Please choose an option--</option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                </div>              
+                <div class="form-group">
+                    <label><input name="user-recommend" type="radio" checked></label>
+                    <label><input name="user-recommend" type="radio"></label>
+                    <label><input name="user-recommend" type="radio"></label>
+                </div>
+                <div class="form-group">
+                    <label><input value="design" type="checkbox">Design</label>
+                    <label><input value="content" type="checkbox">Content</label>
+                    <label><input value="structure" type="checkbox">Structure</label>
+                    <label><input value="guidance" type="checkbox">Guidance</label>
+                    <label><input value="accessiblity" type="checkbox">Accessibility</label>
+                </div>               
+                <div class="form-group">
+                    <textarea></textarea>
+                </div>
+                <div class="form-group">
+                    <button id="submit" type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
