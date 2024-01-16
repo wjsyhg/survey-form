@@ -1,43 +1,165 @@
+@media (min-width: 576px) {
+    #container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    #container {
+        max-width: 720px;
+    }
+}
+
+
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-image: linear-gradient(115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7)), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
     
 }
 
 #container {
+    margin-top: 2rem;
     height: 100vh;
     text-align: center;
+    width: 100%;
+}
+
+#survey-form {
+    background-color: rgba(27, 27, 50, 0.8);
+    padding: 35px;
+    color: white;
+    border-radius: 5px;
+    font-size: 1.2rem;
 }
 
 .form-group {
     margin: 5px;
+    padding: 10px;
+}
+
+#title {
+    font-weight: 400;
+    margin-bottom: 0.5em;
+}
+
+#description{
+    font-style: italic;
+    font-weight: 200;
+    font-size: 1rem;
+    margin-top: 0;
+
 }
 
 #name-label {
     float: left;
+    padding-bottom: 5px;
 }
 
 #name {
     display: block;
     width: 100%;
+    box-sizing: border-box;
+    height: 1.75rem;
+    
 }
 
 #email-label {
     float: left;
+    padding-bottom: 5px;
 }
 
 #email {
     display: block;
     width: 100%;
+    box-sizing: border-box;
+    height: 1.75rem;
 }
 
 #number-label {
     float: left;
+    padding-bottom: 5px;
 }
 
 #number {
     display: block;
     width: 100%;
+    box-sizing: border-box;
+    height: 1.75rem;
+}
+
+#dropdown-label {
+    float: left;
+    padding-bottom: 5px;
+}
+
+#dropdown {
+    display: block;
+    width: 100%;
+    height: 1.75rem;
+   
+}
+
+#radio-label {
+    text-align: left;
+    display: block;
+    padding-bottom: 5px;
+}
+
+#radio {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    height: 1.75rem;
+}
+
+#checkbox-label {
+    display: block;
+    text-align: left;
+    padding-bottom: 5px;
+}
+
+#checkbox {
+    display: block;
+    text-align: left;
+    box-sizing: border-box;
+    height: 1.75rem;
+    display: flex;
+    align-items: center;
+}
+
+#textarea {
+    display: block;
+    text-align: left;
+    padding-bottom: 5px;
+}
+
+textarea {
+    width: 100%;
+    min-height: 100px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+#submit-group {
+    padding-top: 0;
+}
+
+#submit {
+    width: 100%;
+    height: 50px;
+    background-color: green;
+    border-radius: 2px;
+    color: white;
+    
+}
+
+#submit:hover {
+    cursor: pointer;
 }
